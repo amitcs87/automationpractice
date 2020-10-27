@@ -10,18 +10,32 @@ This project is created to automate http://automationpractice.com/ shopping port
 3. eclipse IDE (This is optional, project can be executed without any IDE as well)
 4. chrome browser (provided chrome driver supprt chrome version 84.0.4147.30, 
 					If any later version of chrome used then need to replace chromedriver.exe from /src/test/resource/Drivers with compatible chrome driver)
-5. chromedriver.exe should place "automationpractice\src\test\resources\Drivers" location after unzipping. As gmail blocked this file for sending attachment, this file was not shipped with the project. 
+5. This required if project share through mail. chromedriver.exe should place "automationpractice\src\test\resources\Drivers" location after unzipping. As gmail blocked this file for sending attachment, this file was not shipped with the project. 
 
+# Import Project into Eclipse
+You can Import project from delivered assignment_jayanta.7z file or from the git hub.
 
-# Import Project into eclipse IDE
+## Import From zip file
 1. Unzip assignment_jayanta.7z file
-2. Placed chromedriver.exe in "automationpractice\src\test\resources\Drivers" location.
+2. Placed chromedriver.exe in "automationpractice\src\test\resources\Drivers" location. Tis required if project zip file download from mail.
 3. Click File --> Import... in eclipse
 4. Select 'Existing Projects into Workspace' under 'General'
 5. Click 'Browse' for 'Select root directory' option.
 6. Select 'automationpractice' folder under unzipped folder and click 'OK'. 'automationpractice' is the project root directory.
 7. Click 'Finish'
 8. Right click on the project --> Select 'Maven' --> Click on 'Update Project' --> Click 'OK'. (This steps should happen successfully)
+
+## Import From Git Repo
+1. Open eclipse
+2. Click 'File' --> click 'Import...'
+3. Expand 'Git' from the Import window --> select 'Projects from git' --> Clicm on 'Next'
+4. Select 'Clone URI' --> clicm 'Next'
+5. Enter URI as 'https://github.com/amitcs87/automationpractice' , others field will autimatically populate --> Click on 'Next'
+6. select 'main' --> Click 'Next'
+7. Brows the directory where you want to import --> Click 'Next'. This steps might take some time.
+8. Select 'Import existing Eclipse Projects' --> Click 'Next'
+9. Click 'Finish'
+10. Right click on the project --> Select 'Maven' --> Click 'Update Project...' --> Click 'Ok'
 
 ## Execution
 Project can be executed from eclipse or command prompt.
